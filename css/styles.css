@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.Navigation_Bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(85, 0, 0, 0.721);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.453);
+    width: 94.4%;
+    height: 80px;
+    padding: 0 50px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 999;
+}
+.Navigation_Bar img{
+    width: 70px;
+   height: auto;
+   cursor: pointer;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 150px;
+    padding: 0;
+    height: 80px;
+    
+}
+.nav_links{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 80px;
+}
+.nav_links a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 40px;
+}
+.nav_links:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.search_bar{
+    position: relative;
+}
+
+.search_bar input{
+    position: relative;
+    padding: 10px 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+.search_bar i{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HERO SECTION */
+.slideshow {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    transition: all 1s ease-in;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.slide img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.background_overlay{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+.title_content{
+    position: absolute;
+    color: white;
+    width: 50%;
+    top: 180px;
+    left: 0;
+    padding: 0px 20px;
+}
+.title_content img, .title_content p{
+    width: 50%;
+}
+
+.title_content p{
+    margin: 0;
+    padding-bottom: 15px;
+    font-family: helvetica;
+
+}
+
+/* Play and Watchlist Buttons */
+.Hero_Buttons{
+    width: 150px;
+    text-align: left;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    
+    background-color: #B8001F;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.watchlist{
+    margin-left: 10px;
+}
+.Hero_Buttons:hover{
+    background-color: #43000b; 
+}
+.play_icon{
+   margin-left: 50px;
+}
+.watch_icon{
+    margin-left: 10px;
+ }
+
+
+ /* Iphone 12/13 PRO MAX SCREENS */
+ @media(max-width: 438px){
+
+    .slideshow {
+        width: 100vw;
+        height: 50vh;
+    }
+    
+    .slide img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+    .title_content img, .title_content p{
+        width: 90%;
+    }
+    .title_content p{
+        margin: 0;
+        font-size: 10px;
+        font-family: helvetica;
+    
+    }
+    .Hero_Buttons{
+        width: 90px;
+        font-size: 10px;
+        padding: 10px;
+        background-color: #B8001F;
+    }
+    .play_icon{
+        margin-left: 30px;
+     }
+ }
