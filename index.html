@@ -24,9 +24,12 @@
         </nav>
 
         <div class="search_bar">
-            <input type="text" placeholder="seacrh...">
+            <input type="text" placeholder="Search...">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+
+        <span class="mobile_menu" onclick="NAV()"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        
     </header>
 
 
@@ -49,7 +52,10 @@
 
     <div class="slideshow">
 
-
+        <button class="prev" onclick="Previous_Slide()">&#10094;</button>
+            <button class="next" onclick="Next_Slide()">&#10095;</button>
+            
+        
         <div class="slide active">
             <img src="images/covers/Birds of prey 2 Cover.jpg" alt="Birds of prey image">
             <div class="background_overlay"></div>
@@ -144,6 +150,8 @@
                 <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
             </div>
         
+            
+
         </div>
 
 
