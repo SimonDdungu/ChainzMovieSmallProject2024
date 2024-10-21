@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Chainz Movies</title>
+</head>
+<body>
+
+    <header class="Navigation_Bar">
+        <img class="Logo" src="images/Brand Logo/Lion Logo.png">
+
+        <nav>
+            <ul class="nav_menu">
+                <li class="nav_links"><a>Home</a></li>
+                <li class="nav_links"><a>Movies</a></li>
+                <li class="nav_links"><a>Series</a></li>
+            </ul>
+        </nav>
+
+        <div class="search_bar">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <span class="mobile_menu" onclick="NAV()"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+        
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Main_Container">  
+
+    <div class="slideshow">
+
+        <button class="prev" onclick="Previous_Slide()">&#10094;</button>
+            <button class="next" onclick="Next_Slide()">&#10095;</button>
+            
+        
+        <div class="slide active">
+            <img src="images/covers/Birds of prey 2 Cover.jpg" alt="Birds of prey image">
+            <div class="background_overlay"></div>
+            <div class="title_content">
+                <img class="title_logo" src="images/logos/Birds of prey logo.png" alt="Birds of prey logo">
+                <br>
+                <br >
+                <p>Harley Quinn after her split from the Joker. Freed from his influence, 
+                    she embarks on a chaotic journey of self-discovery in Gotham City. 
+                    <br >Teaming up with a diverse group of misfits including Black Canary, Huntress, and Detective Montoya—Harley takes on the ruthless crime lord Black Mask, who has a dangerous bounty on her head. 
+                </p>
+                <button class="Hero_Buttons">Play <span class="play_icon"><i class="fa-solid fa-play" style="color: #ffffff;"></i></span></button>
+                <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
+            </div>
+        </div>
+
+
+        <div class="slide">
+            <img src="images/covers/Ender's Game cover.jpg" alt="Ender's Game">
+            <div class="background_overlay"></div>
+            <div class="title_content">
+                <img class="title_logo" src="images/logos/enders game logo.png" alt="Enders game logo">
+                <p>Young prodigy Ender Wiggin, who is recruited into a military training program in space to prepare for an impending alien invasion. 
+                    <br >Under the strict guidance of Colonel Graff, 
+                    Ender faces intense challenges and battles in simulated environments, pushing him to his limits. 
+                    <br >As he excels in strategic warfare, Ender grapples with the moral implications of his training and the weight of leadership. 
+                </p>
+                <button class="Hero_Buttons">Play <span class="play_icon"><i class="fa-solid fa-play" style="color: #ffffff;"></i></span></button>
+                <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
+            </div>
+        
+        </div>
+
+
+        <div class="slide">
+            <img src="images/covers/Harry Potter Cover.jpg" alt="Harry Potter image">
+            <div class="background_overlay"></div>
+            <div class="title_content">
+                <img class="title_logo" src="images/logos/Harry-Potter-Logo-PNG-Image-HQ.png" alt="Harry Potter logo">
+                <p>Harry, Ron, and Hermione embark on a perilous quest to find and destroy Voldemort's Horcruxes objects containing pieces of his soul. 
+                    <br>As they evade the Dark Lord's forces and unravel the mysteries of the Deathly Hallows, the trio faces challenges that test their friendship and resolve. 
+                    <br>With the wizarding world in chaos and the stakes higher than ever, 
+                    Harry must confront his destiny in a final battle against Voldemort and his followers. 
+                </p>
+                <button class="Hero_Buttons">Play <span class="play_icon"><i class="fa-solid fa-play" style="color: #ffffff;"></i></span></button>
+                <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/covers/Mulan Cover.jpg" alt="Mulan Cover">
+            <div class="background_overlay"></div>
+            <div class="title_content">
+                <img class="title_logo" src="images/logos/Mulan logo.png" alt="Mulan Logo">
+                <p>A young Chinese woman who disguises herself as a man to take her ailing father's place in the army. 
+                    <br>Driven by love for her family and a desire to protect her country from invading Huns, Mulan embarks on a courageous journey of self-discovery. 
+                   <br> With the help of her dragon guardian, Mushu, and her newfound comrades, she faces formidable challenges and battles while striving to prove her worth. 
+                </p>
+                <button class="Hero_Buttons">Play <span class="play_icon"><i class="fa-solid fa-play" style="color: #ffffff;"></i></span></button>
+                <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
+            </div>
+        
+        </div>
+
+        <div class="slide">
+            <img src="images/covers/Mandame Web Cover.jpeg" alt="Mandame Web Image">
+            <div class="background_overlay"></div>
+            <div class="title_content">
+                <img class="title_logo" src="images/logos/Mandame Web logo.png" alt="Madame web Logo">
+                <p>Cassandra Webb, a clairvoyant with unique psychic abilities, who finds herself at the center of a web of intrigue and danger in the Marvel Universe. 
+                    <br>As she navigates a world filled with powerful enemies and shifting alliances, Cassandra discovers that her powers are key to uncovering a conspiracy that threatens the future of superheroes. 
+                   <!-- <br>Teaming up with a diverse group of allies, she must harness her gifts to protect both her own fate and that of the heroes she admires. -->
+                </p>
+                <button class="Hero_Buttons">Play <span class="play_icon"><i class="fa-solid fa-play" style="color: #ffffff;"></i></span></button>
+                <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
+            </div>
+        
+        </div>
+
+        <div class="slide">
+            <img src="images/covers/Everything Everywhere Cover.jpg" alt="Everything Everywhere All At Once Image">
+            <div class="background_overlay"></div>
+            <div class="title_content">
+                <img class="title_logo" src="images/logos/Everything Everywhere logo.png" alt="Everything Everywhere All At Once logo">
+                <br >
+                <br >
+                <p>Evelyn Wang, a weary laundromat owner who is unexpectedly thrust into a multiverse-spanning adventure. 
+                    <br>When her life is turned upside down by an IRS audit, she discovers that she must connect with parallel versions of herself across different realities to prevent a catastrophic threat. 
+                    <!--<br>As she navigates bizarre and chaotic worlds, Evelyn taps into her alternate selves' skills and experiences, ultimately confronting her own insecurities and the complexities of family relationships. -->
+                </p>
+                <button class="Hero_Buttons">Play <span class="play_icon"><i class="fa-solid fa-play" style="color: #ffffff;"></i></span></button>
+                <button class="Hero_Buttons watchlist">Watchlist <span class="watch_icon"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></span></button>
+            </div>
+        
+            
+
+        </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="movie_container">
+
+        <h1>MOVIES</h1>
+        
+        <div class="All_movies">
+
+            <div class="Each_movie">
+                <img src="images/posters/Michael poster.jpg" alt="Micheal Jackson Poster">
+                <div class="movie_content">
+                    <h3>Michael</h3>
+                    <h5>Documentary</h5>
+                    <span class="ratings">⭐⭐⭐⭐⭐</span>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+
+            <div class="Each_movie">
+                <img src="images/posters/Swallowed-2-2 poster.jpeg" alt="Swallowed Poster">
+                <div class="movie_content">
+                    <h3>Swallowed</h3>
+                    <h5>Horror</h5>
+                    <span class="ratings">⭐⭐⭐⭐</span>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+
+            <div class="Each_movie">
+                <img src="images/posters/Joker poster.jpg" alt="Joker Poster">
+                <div class="movie_content">
+                    <h3>Joker</h3>
+                    <h5>Crime</h5>
+                    <span class="ratings">⭐⭐</span>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+
+
+            <div class="Each_movie">
+                <img src="images/posters/Challengers-2-3 poster.jpg" alt="challengers Poster">
+                <div class="movie_content">
+                    <h3>challengers</h3>
+                    <h5>Sport</h5>
+                    <span class="ratings">⭐⭐⭐⭐</span>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+
+
+            <div class="Each_movie">
+                <img src="images/posters/deadpool and wolverine poster.jpg" alt="Deadpool Poster">
+                <div class="movie_content">
+                    <h3>Deadpool 3</h3>
+                    <h5>Action</h5>
+                    <span class="ratings">⭐⭐⭐⭐⭐</span>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+
+
+            <div class="Each_movie">
+                <img src="images/posters/TWPITW-2-3 poster.jpeg" alt="TWPITW Poster">
+                <div class="movie_content">
+                    <h3>TWPITW</h3>
+                    <h5>Romance</h5>
+                    <span class="ratings">⭐⭐⭐⭐⭐</span>
+                    <button class="play_now">Play Now</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+</div>
+
+
+
+
+
+<script src="javascript/index.js"></script>
+</body>
+</html>
